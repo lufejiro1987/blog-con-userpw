@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DesafioBlog</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <li><%= link_to 'Admin-CrearPost', dashboard_posts_path %></li>
+    <br>
+    <li><%= link_to 'Main-VerPosts', root_path %></li>
+    <%= yield %>
+  </body>
+</html>

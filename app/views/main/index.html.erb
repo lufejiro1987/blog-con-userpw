@@ -1,0 +1,10 @@
+<h1 style="text-align: center">Blog</h1>
+<hr>
+
+<% @posts.each do |post| %>
+  <h3><%= post.title %></h3>
+  <h3><%= post.created_at %></h3>
+  <%= image_tag post.image_url %>
+  <div style="white-space: pre-wrap"><%= raw post.content %></div>
+  <hr style="margin:40px 0 60px">
+<% end %>
